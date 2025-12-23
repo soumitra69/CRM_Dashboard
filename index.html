@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EduFlow Dashboard</title>
+        <link rel="stylesheet" href="./css/index.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet">
+
+    </head>
+    <body>
+        <!-- Sidebar -->
+        <div class="container">
+            <body>
+            </body>
+
+            <div class="sidebar">
+
+                <div class="side-nav">
+                    <div class="sidebar-brand">
+                        <img src="./Assets/Logo 1 (1).png" alt>
+                    </div>
+                    <ul class="nav-list">
+                        <li>
+                            <label
+                                style="background-color: white; color: #4c1d95;"
+                                for="dashboard-toggle" class="nav-label">
+                                <img src="./Assets/dashbord.png" alt> Dashboard
+                            </label>
+                            <input type="checkbox" id="dashboard-toggle"
+                                class="nav-toggle">
+                            <ul class="nav-submenu">
+                                <li>Overview</li>
+                                <li>Stats</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label for="result-toggle" class="nav-label">
+                                <img src="./Assets/School Management.png" alt>
+                                School
+                                Management
+                            </label>
+                            <input type="checkbox" id="result-toggle"
+                                class="nav-toggle">
+                            <ul class="nav-submenu">
+                                <li><img src="./Assets/Academic Year.png"
+                                        alt>Academic Year</li>
+                                <li><img src="./Assets/add class.png" alt>Add
+                                    Class
+                                    & Section</li>
+                                <li><img src="./Assets/add Subject.png" alt>ADD
+                                    Subject</li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <label for="fees-toggle" class="nav-label">
+                                <img src="./Assets/Result MAnagement.png" alt>
+                                Result
+                                Management
+                            </label>
+                            <input type="checkbox" id="fees-toggle"
+                                class="nav-toggle">
+                            <ul class="nav-submenu">
+                                <li><img src="./Assets/result.png" alt>Show
+                                    Result</li>
+                                <label style="padding-left:45px "
+                                    for="primary-toggle" class="nav-label">
+                                    <img src="./Assets/Primary.png" alt> Primary
+                                    Level
+                                </label>
+                                <input type="checkbox" id="primary-toggle"
+                                    class="nav-toggle">
+                                <ul class="nav-submenu">
+                                    <li class="p-p"><img
+                                            src="./Assets/First.png"
+                                            alt>First
+                                        Terminal</li>
+                                    <li class="p-p"><img
+                                            src="./Assets/Second.png"
+                                            alt>Second
+                                        Terminal</li>
+                                    <li class="p-p"><img
+                                            src="./Assets/Anual.png"
+                                            alt>Anual
+                                        Terminal</li>
+                                </ul>
+                                <label style="padding-left:51px ;"
+                                    for="middle-toggle" class="nav-label">
+                                    <img src="./Assets/Middle.png" alt> Middle
+                                    Level
+                                </label>
+                                <input type="checkbox" id="middle-toggle"
+                                    class="nav-toggle">
+                                <ul class="nav-submenu">
+                                    <li class="p-p"><img
+                                            src="./Assets/First.png"
+                                            alt>First
+                                        Terminal</li>
+                                    <li class="p-p"><img
+                                            src="./Assets/Second.png"
+                                            alt>Second
+                                        Terminal</li>
+                                    <li class="p-p"><img
+                                            src="./Assets/Anual.png"
+                                            alt>Anual
+                                        Terminal</li>
+                                </ul>
+
+                            </ul>
+                        </li>
+
+                        <li>
+                            <label for="fees-toggl" class="nav-label">
+                                <img src="./Assets/Fees Management.png" alt>
+                                Fees
+                                Management
+                            </label>
+                            <input type="checkbox" id="fees-toggl"
+                                class="nav-toggle">
+                            <ul class="nav-submenu">
+                                <li><img src="./Assets/Add Fe.png" alt>Add Fees
+                                    Structure</li>
+                                <li><img src="./Assets/Add Payment.png" alt>Add
+                                    Payments</li>
+                                <li><img src="./Assets/Fee Col.png" alt>Fee
+                                    Collection</li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <label for="student-toggle" class="nav-label">
+                                <img src="./Assets/Student Management.png" alt>
+                                Student
+                                Management
+                            </label>
+                            <input type="checkbox" id="student-toggle"
+                                class="nav-toggle">
+                            <ul class="nav-submenu">
+                                <li><img src="./Assets/Student M.png"
+                                        alt>Students</li>
+                                <li><img src="./Assets/Add Student.png" alt>Add
+                                    Student</li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <label for="clerk-toggle" class="nav-label">
+                                <img src="./Assets/Clerk Management.png" alt>
+                                Clerk
+                                Management
+                            </label>
+                            <input type="checkbox" id="clerk-toggle"
+                                class="nav-toggle">
+                            <ul class="nav-submenu">
+
+                                <li><img src="./Assets/add Clerk.png" alt>Add
+                                    Clerk</li>
+                                <li><img src="./Assets/Clark List.png" alt>Clerk
+                                    List</li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <label for="settings-toggle" class="nav-label">
+                                <!-- <img src="./Assets/Setting Management.png" alt> -->
+                                Settings
+                            </label>
+                            <input type="checkbox" id="settings-toggle"
+                                class="nav-toggle">
+                            <ul class="nav-submenu">
+                                <li><img src="./Assets/Profile.png"
+                                        alt>Profile</li>
+                                <li><img src="./Assets/Change Pasword.png"
+                                        alt>Change Password</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button class="logout-btn"><img
+                            src="./Assets/Logout.png" alt>
+                        Log
+                        Out</button>
+
+                    <div class="user-profile">
+                        <div class="user-avatar"></div>
+                        <div class="user-info">
+                            <h6>Ryan George</h6>
+                            <p>ryan.george@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Header -->
+            <div class="header">
+                <div class="welcome">
+                    <h2>Welcome!</h2>
+                    <p id="dateText"></p>
+                </div>
+                <div class="search-container">
+                    <input type="text" class="search-box"
+                        placeholder="Search here">
+                    <img class="s-c" src="./Assets/Search.png" alt>
+                </div>
+                <div class="header-icons">
+                    <button class="noti"><img src="./Assets/Noti_u.png"
+                            alt></button>
+                    <span class="badge" id="notiCount">3</span>
+                    <button class="noti"><img src="./Assets/Email-G.png"
+                            alt></button><span class="badge_email"
+                        id="mailCount">5</span>
+                </div>
+            </div>
+
+            <!-- Stats Cards -->
+            <div class="stats-container">
+                <div class="stat-card">
+                    <div class="stat-card-img">
+                        <img src="./Assets/Mask group.png" alt>
+                        <img class="arrow" src="./Assets/Frame 876.png" alt>
+                    </div>
+                    <h6>Total Students</h6>
+                    <h3>1,253</h3>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card-img">
+                        <img src="./Assets/Mask group (1).png" alt>
+                        <img class="arrow" src="./Assets/Frame 876.png" alt>
+                    </div>
+                    <h6>Total Classes</h6>
+                    <h3>36</h3>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card-img">
+                        <img src="./Assets/Mask group (2).png" alt>
+                        <img class="arrow" src="./Assets/Frame 876.png" alt>
+                    </div>
+                    <h6>Total Staff</h6>
+                    <h3>74</h3>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card-img">
+                        <img src="./Assets/Mask group (3).png" alt>
+                        <img class="arrow" src="./Assets/Frame 876.png" alt>
+                    </div>
+                    <h6 style="font-size: 14px;">Fees Collected (October)</h6>
+                    <h3>₹11,23,235</h3>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card-img">
+                        <img src="./Assets/Mask group (4).png" alt>
+                        <img class="arrow" src="./Assets/Frame 876.png" alt>
+                    </div>
+                    <h6 style="font-size: 14px;">Pending Admission</h6>
+                    <h3>5</h3>
+                </div>
+            </div>
+
+            <!-- Charts Row -->
+            <div class="charts-row">
+                <!-- Monthly Fee Collection -->
+                <div class="chart-container">
+                    <div class="chart-header">
+                        <div class="chart-title-section">
+                            <div class="chart-title">Monthly Fee
+                                Collection</div>
+                            <div class="chart-amount">₹47,36,260</div>
+                        </div>
+                        <div class="dropdown-class">
+                            <button class="dropdown-btn" type="button">2025-26
+                                ▼</button>
+                            <div class="dropdown-content">
+                                <button class="dropdown-item"
+                                    type="button">2026-27</button>
+                                <button class="dropdown-item"
+                                    type="button">2027-28</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chart-area">
+                        <div class="y-axis">
+                            <span class="y-label">100K</span>
+                            <span class="y-label">80K</span>
+                            <span class="y-label">60K</span>
+                            <span class="y-label">40K</span>
+                            <span class="y-label">20K</span>
+                            <span class="y-label">0</span>
+                        </div>
+
+                        <div class="bars-container">
+                            <div class="bar-wrapper">
+                                <div class="bar" style="height: 90%;"></div>
+                                <div class="month-label">Apr</div>
+                            </div>
+                            <div class="bar-wrapper">
+                                <div class="bar light"
+                                    style="height: 35%;"></div>
+                                <div class="month-label">May</div>
+                            </div>
+                            <div class="bar-wrapper">
+                                <div class="bar light"
+                                    style="height: 72%;"></div>
+                                <div class="month-label">Jun</div>
+                            </div>
+                            <div class="bar-wrapper">
+                                <div class="bar light"
+                                    style="height: 62%;"></div>
+                                <div class="month-label">Jul</div>
+                            </div>
+                            <div class="bar-wrapper">
+                                <div class="bar light"
+                                    style="height: 52%;"></div>
+                                <div class="month-label">Aug</div>
+                            </div>
+                            <div class="bar-wrapper">
+                                <div class="bar light"
+                                    style="height: 75%;"></div>
+                                <div class="month-label">Sep</div>
+                            </div>
+                            <div class="bar-wrapper">
+                                <div class="bar light"
+                                    style="height: 42%;"></div>
+                                <div class="month-label">Oct</div>
+                            </div>
+                            <div class="bar-wrapper">
+                                <div class="bar light"
+                                    style="height: 0%;"></div>
+                                <div class="month-label">Nov</div>
+                            </div>
+                            <div class="bar-wrapper">
+                                <div class="bar light"
+                                    style="height: 0%;"></div>
+                                <div class="month-label">Dec</div>
+                            </div>
+                            <div class="bar-wrapper">
+                                <div class="bar light"
+                                    style="height: 0%;"></div>
+                                <div class="month-label">Jan</div>
+                            </div>
+                            <div class="bar-wrapper">
+                                <div class="bar light"
+                                    style="height: 0%;"></div>
+                                <div class="month-label">Feb</div>
+                            </div>
+                            <div class="bar-wrapper">
+                                <div class="bar light"
+                                    style="height: 0%;"></div>
+                                <div class="month-label">Mar</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Student Per Class -->
+                <div class="chart-card student-per-class">
+                    <div class="chart-title">Student Per Class</div>
+                    <span class="chart-amount">1,253</span>
+
+                    <div class="donut-container">
+                        <svg class="donut-chart" viewBox="0 0 200 200">
+                            <!-- 12 equal slices that fully fill the circle -->
+                            <circle cx="100" cy="100" r="80" fill="none"
+                                stroke="#DC97FF" stroke-width="40"
+                                stroke-dasharray="42 498"
+                                transform="rotate(-90 100 100)" />
+
+                            <circle cx="100" cy="100" r="80" fill="none"
+                                stroke="#D283FF" stroke-width="40"
+                                stroke-dasharray="42 498"
+                                stroke-dashoffset="-42"
+                                transform="rotate(-90 100 100)" />
+
+                            <circle cx="100" cy="100" r="80" fill="none"
+                                stroke="#BD68EE" stroke-width="40"
+                                stroke-dasharray="42 498"
+                                stroke-dashoffset="-84"
+                                transform="rotate(-90 100 100)" />
+
+                            <circle cx="100" cy="100" r="80" fill="none"
+                                stroke="#AB51E3" stroke-width="40"
+                                stroke-dasharray="42 498"
+                                stroke-dashoffset="-126"
+                                transform="rotate(-90 100 100)" />
+
+                            <circle cx="100" cy="100" r="80" fill="none"
+                                stroke="#8B2FC9" stroke-width="40"
+                                stroke-dasharray="42 498"
+                                stroke-dashoffset="-168"
+                                transform="rotate(-90 100 100)" />
+
+                            <circle cx="100" cy="100" r="80" fill="none"
+                                stroke="#6818A5" stroke-width="40"
+                                stroke-dasharray="42 498"
+                                stroke-dashoffset="-210"
+                                transform="rotate(-90 100 100)" />
+
+                            <circle cx="100" cy="100" r="80" fill="none"
+                                stroke="#5A108F" stroke-width="40"
+                                stroke-dasharray="42 498"
+                                stroke-dashoffset="-252"
+                                transform="rotate(-90 100 100)" />
+
+                            <circle cx="100" cy="100" r="80" fill="none"
+                                stroke="#4A0A77" stroke-width="40"
+                                stroke-dasharray="42 498"
+                                stroke-dashoffset="-294"
+                                transform="rotate(-90 100 100)" />
+
+                            <circle cx="100" cy="100" r="80" fill="none"
+                                stroke="#3C0663" stroke-width="40"
+                                stroke-dasharray="42 498"
+                                stroke-dashoffset="-336"
+                                transform="rotate(-90 100 100)" />
+
+                            <circle cx="100" cy="100" r="80" fill="none"
+                                stroke="#310055" stroke-width="40"
+                                stroke-dasharray="42 498"
+                                stroke-dashoffset="-378"
+                                transform="rotate(-90 100 100)" />
+
+                            <circle cx="100" cy="100" r="80" fill="none"
+                                stroke="#532B88" stroke-width="40"
+                                stroke-dasharray="42 498"
+                                stroke-dashoffset="-420"
+                                transform="rotate(-90 100 100)" />
+
+                            <circle cx="100" cy="100" r="80" fill="none"
+                                stroke="#2F184B" stroke-width="40"
+                                stroke-dasharray="42 498"
+                                stroke-dashoffset="-462"
+                                transform="rotate(-90 100 100)" />
+                        </svg>
+                        <div class="legend">
+                            <div class="legend-item">
+                                <span class="legend-color"
+                                    style="background: #DC97FF;"></span> I
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color"
+                                    style="background: #D283FF;"></span> II
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color"
+                                    style="background: #BD68EE;"></span> III
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color"
+                                    style="background: #AB51E3;"></span> IV
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color"
+                                    style="background: #8B2FC9;"></span> V
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color"
+                                    style="background: #6818A5;"></span> VI
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color"
+                                    style="background: #5A108F;"></span> VII
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color"
+                                    style="background: #4A0A77;"></span> VIII
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color"
+                                    style="background: #3C0663;"></span> IX
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color"
+                                    style="background: #310055;"></span> X
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color"
+                                    style="background: #532B88;"></span> XI
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color"
+                                    style="background: #2F184B;"></span> XII
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Monthly Fees Pending -->
+            <div class="chart-card monthly-pending">
+                <div class="chart-header">
+                    <div>
+                        <div class="chart-title">Monthly Fees Pending</div>
+                        <span class="chart-amount">₹3,58,740</span>
+                    </div>
+                    <div class="dropdown-class">
+                        <button class="dropdown-btn" type="button">Class VIII
+                            ▼</button>
+                        <div class="dropdown-content">
+                            <button class="dropdown-item" type="button">Class
+                                VI</button>
+                            <button class="dropdown-item" type="button">Class
+                                VII</button>
+                            <button class="dropdown-item" type="button">Class
+                                VIII</button>
+                            <button class="dropdown-item" type="button">Class
+                                IX</button>
+                            <button class="dropdown-item" type="button">Class
+                                X</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="progress-section">
+                    <div class="progress-item">
+                        <div class="progress-label">Section A</div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill"
+                                style="width: 65%; background: linear-gradient(90deg, #E9D5FF 0%, #A855F7 100%);
+"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-item">
+                        <div class="progress-label">Section B</div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill"
+                                style="width: 35%; background: linear-gradient(90deg, #E9D5FF 0%, #A855F7 100%);"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-item">
+                        <div class="progress-label">Section C</div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill"
+                                style="width: 40%; background: linear-gradient(90deg, #E9D5FF 0%, #A855F7 100%);"></div>
+                        </div>
+                    </div>
+                    <div class="scale-labels">
+                        <span>0</span>
+                        <span>20K</span>
+                        <span>40K</span>
+                        <span>60K</span>
+                        <span>80K</span>
+                        <span>100K</span>
+                        <span>120K</span>
+                        <span>140K</span>
+                        <span>160K</span>
+                        <span>180K</span>
+                        <span>200K</span>
+                        <span>220K</span>
+                        <span>240K</span>
+                        <span>260K</span>
+                        <span>280K</span>
+                        <span>300K</span>
+                        <span>320K</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
