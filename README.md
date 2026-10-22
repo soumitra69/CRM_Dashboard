@@ -65,30 +65,33 @@ The dashboard provides instant visibility into:
 ## Data Visualization
 
 ### Monthly Fee Collection Chart
-Interactive line chart showing fee collection trends across all months (April to March) with year-wise comparison.
+Interactive bar chart showing fee collection trends across all months (April to March) with year-wise comparison and hover tooltips.
 
 ### Student Distribution
-Visual representation of student enrollment across all classes (I through XII).
+Interactive donut chart representation of student enrollment across all classes (I through XII).
 
 ### Pending Fees by Section
-Detailed breakdown of pending fees by class and section with horizontal bar chart visualization.
+Detailed breakdown of pending fees by class and section with animated horizontal progress bar visualization.
 
 ## User Interface
 
 The system features:
-- Clean, intuitive sidebar navigation
-- Real-time notifications and email alerts
-- Search functionality
+- Clean, intuitive sidebar navigation with animated accordion submenus and mobile slide-over drawer
+- Multi-layered **Glassmorphism** design with ambient floating light orbs and frosted cards
+- Smooth entrance animations, animated KPI counters, and interactive chart tooltips
+- Real-time notifications and email inbox popovers
+- Interactive live search and filtering
 - User profile quick access
-- Responsive design elements
+- Fully responsive layout across all screen sizes (4K/Desktop, Laptop, Tablet, and Mobile)
 
 ## Technology Stack
 
-This project appears to be built with:
-- HTML/CSS for structure and styling
-- JavaScript for interactivity
-- Chart libraries for data visualization
-- Responsive design principles
+This project is built with:
+- **React 18** (Functional Components & Hooks)
+- **Vite** for fast development and optimized production builds
+- **CSS3 Glassmorphism & Keyframe Animations** (`backdrop-filter`, staggered transitions, interactive states)
+- **Interactive SVG & Bar Charts** for real-time data visualization
+- **Responsive Design** across all viewports (`320px` to `1920px+`)
 
 ## Installation
 
@@ -102,24 +105,50 @@ git clone https://github.com/soumitra69/CRM_Dashboard.git
 cd CRM_Dashboard
 ```
 
-3. Open `index.html` in your web browser or deploy to a web server.
+3. Install dependencies and start the development server:
+```bash
+npm install
+npm run dev
+```
+
+4. Build for production:
+```bash
+npm run build
+```
 
 ## Project Structure
 
 ```
 CRM_Dashboard/
 ├── index.html
-├── Assets/
-│   ├── Logo 1 (1).png
-│   ├── dashbord.png
-│   ├── School Management.png
-│   ├── Result MAnagement.png
-│   ├── Fees Management.png
-│   ├── Student Management.png
-│   ├── Clerk Management.png
-│   └── [other icons and images]
-├── styles/
-└── scripts/
+├── package.json
+├── vite.config.js
+├── public/
+│   └── Assets/
+│       ├── Logo 1 (1).png
+│       ├── dashbord.png
+│       ├── School Management.png
+│       ├── Result MAnagement.png
+│       ├── Fees Management.png
+│       ├── Student Management.png
+│       ├── Clerk Management.png
+│       └── [other icons and images]
+└── src/
+    ├── main.jsx
+    ├── App.jsx
+    ├── index.css
+    ├── data/
+    │   └── dashboardData.js
+    ├── utils/
+    │   └── useAnimatedNumber.js
+    └── components/
+        ├── Sidebar.jsx
+        ├── Header.jsx
+        ├── StatsGrid.jsx
+        ├── MonthlyCollectionChart.jsx
+        ├── StudentPerClassChart.jsx
+        ├── MonthlyPendingChart.jsx
+        └── QuickModal.jsx
 ```
 
 ## Usage
